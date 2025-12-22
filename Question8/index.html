@@ -4,16 +4,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Highlighter</title>
-    <script src="styles.css"></script>
+    <title>Custom Highlighter</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <h1 class="feature" style="text-align: center">Find The Features</h1>
-      <input type="text" class="input-text" id="input-value" />
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Find text..." />
     </div>
 
-    <script src="script.ts"></script>
+    <div id="content">
+      This is a simple example to demonstrate a custom text highlighter. Type a
+      word into the input field to see it highlighted in real time.
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
