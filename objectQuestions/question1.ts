@@ -37,6 +37,3 @@ class Cylinder {
 
 const myCylinder = new Cylinder(5, 10);
 console.log(`Volume: ${myCylinder.getVolume()}`);
-
-
-// library.sort((a, b) => b.libraryID - a.libraryID);
