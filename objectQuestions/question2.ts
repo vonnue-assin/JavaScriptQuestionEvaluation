@@ -17,3 +17,14 @@ var student = {
 };
 
 deleteProperty(student);
+
+const invertObject = (obj: Record<string, any>): Record<string, string> => {
+  return Object.fromEntries(
+    Object.entries(obj).map(([key, value]) => [value.toString(), key])
+  );
+};
+
+const original = { red: "#FF0000", green: "#00FF00", blue: "#0000FF" };
+const inverted = invertObject(original);
+
+console.log(inverted);
