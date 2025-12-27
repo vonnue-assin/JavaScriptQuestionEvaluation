@@ -16,5 +16,3 @@ const meanOfNumbers = (num: string): number => {
 console.log(meanOfNumbers("11"));
 console.log(meanOfNumbers("66"));
 console.log(meanOfNumbers("1151"));
-
-

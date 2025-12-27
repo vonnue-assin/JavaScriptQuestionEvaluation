@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 class="heading">Add Elements to Blank Array</h2>
+    <div class="flex">
+      <input
+        type="text"
+        id="inputVal"
+        class="input"
+        placeholder="Enter an item"
+      />
+
+      <button class="add-button" onclick="addItem()">Add</button>
+      <button class="add-button" onclick="displayItems()">Display</button>
+    </div>
+
+    <div id="result"></div>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      const myArray = [];
+
+      function addItem() {
+        const val = document.getElementById("inputVal").value;
+        if (val) {
+          myArray.push(val);
+          alert(`Added: ${val}`);
+          document.getElementById("inputVal").value = "";
+        }
+      }
+
+      function displayItems() {
+        let output = "<hr/>";
+
+        myArray.forEach((item, index) => {
+          output += `Element ${index} = ${item}<br/>`;
+        });
+        document.getElementById("result").innerHTML = output;
+      }
+    </script>
+  </body>
+</html>
