@@ -1,0 +1,25 @@
+<!-- Write a JavaScript program to create a dropdown menu that shows and hides its options when clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dropdown">
+      <button id="dropdownBtn" class="dropbtn" onclick="toggleButton()">
+        Menu ▾
+      </button>
+      <div id="dropdownMenu" class="dropdown-content">
+        <a href="#link1">Profile Settings</a>
+        <a href="#link2">Notification</a>
+        <a href="#link3">Logout</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

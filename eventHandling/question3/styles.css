@@ -1,0 +1,14 @@
+.mouse-card {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mouse-click {
+  border: 2px solid red;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 20px;
+}
+
