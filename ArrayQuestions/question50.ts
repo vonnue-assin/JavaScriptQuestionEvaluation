@@ -91,3 +91,4 @@ const getMonthName = (date: any, locale = "en-US") => {
 
 const myDate = new Date();
 console.log(getMonthName(myDate));
+
