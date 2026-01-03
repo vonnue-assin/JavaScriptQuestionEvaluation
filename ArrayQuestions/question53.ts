@@ -39,3 +39,16 @@ console.log(getEveryNth(nthElement, 6));
 
 const numbersArrays = [1, 2, 3, 4, 5, 6, 7, 8];
 console.log(getEveryNth(numbersArrays, 6));
+
+const getAllPairs = (
+  array1: number[] | string[],
+  array2: number[] | string[]
+) => {
+  return;
+};
+
+// Example
+const colors = ["red", "blue"];
+const sizes = ["S", "M", "L"];
+
+console.log(getAllPairs(colors, sizes));

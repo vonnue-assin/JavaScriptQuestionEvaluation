@@ -20,3 +20,10 @@ const tailEnd = (array: number[]) => {
 
 console.log(tailEnd([10, 20, 30]));
 console.log(tailEnd([34, 27, 45, 50, 23]));
+
+const tailedStart = (array: number[]) => {
+  const [, ...rest] = array;
+  return rest.length === 0 ? array : rest;
+};
+
+console.log(tailedStart([12, 14, 15, 16]));
