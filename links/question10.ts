@@ -25,10 +25,10 @@ const unionOfArrays = (array1: number[], array2: number[]) => {
   return twoArrays;
 };
 
-//Write a JavaScript function to find the difference between two arrays.
-
 const new_Array = unionOfArrays(array1, array2);
 console.log(new_Array);
+
+//Write a JavaScript function to find the difference between two arrays.
 
 const differenceOfTwoArrays = (arr1: number[], arr2: number[]) => {
   let differenceArray = [];
