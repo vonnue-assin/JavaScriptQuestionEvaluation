@@ -45,10 +45,3 @@ console.log(fillArray(1, 6));
 console.log(fillArray("a", "d"));
 console.log(fillArray(0, 25, 5));
 console.log(fillArray("Z", "A", 5));
-
-
-// const unzip = (arr: any[][]) => 
-//   arr.reduce((acc, val) => (val.forEach((v, i) => acc[i].push(v)), acc), 
-
-//   Array.from({ length: Math.max(...arr.map(x => x.length)) }).map(() => []));
-
