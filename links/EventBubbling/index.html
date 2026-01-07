@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling Demo</title>
+    <style>
+      .container {
+        padding: 20px;
+        border: 1px solid black;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .outer {
+        background-color: #f0f0f0;
+      }
+      .middle {
+        background-color: #ddd;
+      }
+      .inner {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container outer" id="outerDiv">
+      Outer Div
+      <div class="container middle" id="middleDiv">
+        Middle Div
+        <div class="container inner" id="innerDiv">Inner Div</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
