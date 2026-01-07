@@ -1,19 +1,15 @@
-function displayCurrentDateTimes(): void {
-  const now = new Date();
+// Write a JavaScript function to reverse a number
 
-  const dayOptions: Intl.DateTimeFormatOptions = { weekday: "long" };
-  const day = new Intl.DateTimeFormat("en-US", dayOptions).format(now);
+function reverseNumberMath(num: number): number {
+  let rev = 0;
+  let n = Math.abs(num);
 
-  let hours = now.getHours();
-  const minutes = now.getMinutes();
-  const seconds = now.getSeconds();
+  while (n > 0) {
+    rev = rev * 10 + (n % 10);
+    n = Math.floor(n / 10);
+  }
 
-  const ampm = hours >= 12 ? "PM" : "AM";
-  hours = hours % 12;
-  hours = hours ? hours : 12;
-
-  console.log(`Today is : ${day}.`);
-  console.log(`Current time is : ${hours} ${ampm} : ${minutes} : ${seconds}`);
+  return num < 0 ? -rev : rev;
 }
 
-displayCurrentDateTimes();
+console.log(reverseNumberMath(23398));
