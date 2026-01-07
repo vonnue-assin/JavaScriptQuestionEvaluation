@@ -1,4 +1,4 @@
-function displayCurrentDateTimes(): void {
+const displayCurrentDateTime = (): void => {
   const now = new Date();
 
   const dayOptions: Intl.DateTimeFormatOptions = { weekday: "long" };
@@ -12,8 +12,8 @@ function displayCurrentDateTimes(): void {
   hours = hours % 12;
   hours = hours ? hours : 12;
 
-  console.log(`Today is : ${day}.`);
+  console.log(`Today is : ${day}`);
   console.log(`Current time is : ${hours} ${ampm} : ${minutes} : ${seconds}`);
-}
+};
 
-displayCurrentDateTimes();
+displayCurrentDateTime();
