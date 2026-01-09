@@ -22,7 +22,7 @@ const insertionSorts = (array: number[], left: number, right: number) => {
   }
 };
 
-const merge = (array: number[], l: number, m: number, r: number) => {
+const merged = (array: number[], l: number, m: number, r: number) => {
   const left = array.slice(l, m + 1);
   const right = array.slice(m + 1, r + 1);
 
@@ -56,7 +56,7 @@ const timeSort = (array: number[]) => {
       const mid = Math.min(left + size - 1, n - 1);
       const right = Math.min(left + size * 2 - 1, n - 1);
       if (mid < right) {
-        merge(array, left, right, mid);
+        merged(array, left, right, mid);
       }
     }
   }
